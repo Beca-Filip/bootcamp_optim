@@ -58,5 +58,5 @@ if __name__ == "__main__":
     # alpha = 1
     # print(line_search(test_function_rosenbrock, test_gradient_function_rosenbrock, alpha, x0, eps=1e-6, max_iter=10000))
 
-    backtracking_linesearch = LineSearch(compute_rosenbrock_function, compute_grad_rosenbrock_function,compute_hess_ros_function, alpha = alpha, step_type="newton")
+    backtracking_linesearch = LineSearch(compute_rosenbrock_function, compute_grad_rosenbrock_function,compute_hess_ros_function, alpha = alpha, step_type="newton", flag_plot_cost_function=True)
     backtracking_linesearch(x0)
